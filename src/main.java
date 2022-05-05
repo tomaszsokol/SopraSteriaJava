@@ -20,7 +20,7 @@ public class main {
         List<String> list = new ArrayList<>();
         list.add(path_read);
         list.add(path2_read);
-
+        //git
         //System.out.println(list.get(0));
 
         for (String i:list) {
