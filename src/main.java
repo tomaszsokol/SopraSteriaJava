@@ -1,9 +1,7 @@
-import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,20 +44,8 @@ public class main {
         }
         result = supply - buy;
 
-        PrintWriter pw;
-        try {
-            pw = new PrintWriter ("Report.csv");
-
-            String csvData = "" + "Supply" + ',' + supply + '\n' +
-                    "Buy" + ',' + buy + '\n' + "Result" + ',' + result;
-            pw.write(csvData);
-            pw.close();
-
-            JOptionPane.showMessageDialog(null,"Report saved");
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        print pr = new print();
+        pr.print(supply, buy, result);
 
     }
 }
