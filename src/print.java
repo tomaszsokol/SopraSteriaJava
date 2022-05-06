@@ -1,10 +1,16 @@
 import javax.swing.*;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.List;
 
 public class print {
 
-    static void print(int supply, int buy, int result){
+    static void print(List<Integer> arguments){
+
+        int supply = arguments.get(0);
+        int buy = arguments.get(1);
+        int result = arguments.get(2);
+
         PrintWriter pw;
         try {
             pw = new PrintWriter ("Report.csv");
