@@ -7,12 +7,12 @@ public class main {
         String path2_read = "C:\\Users\\Tomasz Sokół\\Desktop\\Sopra-Steria_File_Handling\\ItemY.csv";
 
 
-        List<Integer> list;
+        List<Integer> result;
         fileread fr = new fileread();
-        list = fr.fileread(path_read, path2_read);
+        result = fr.fileread(path_read, path2_read);
 
         print pr = new print();
-        pr.print(list);
+        pr.print(result);
 
     }
 }
