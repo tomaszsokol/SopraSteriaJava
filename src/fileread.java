@@ -8,7 +8,7 @@ import java.util.List;
 
 public class fileread {
 
-    static List fileread(String path_read, String path2_read){
+    static List reader(String path_read, String path2_read){
 
         String line;
         int supply = 0;
